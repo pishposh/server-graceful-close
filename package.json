@@ -1,0 +1,14 @@
+{
+  "name": "server-graceful-close",
+  "version": "0.0.1",
+  "description": "utility to help gracefully close a Node HTTP server (http.Server)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.13.4"
+  }
+}
