@@ -31,7 +31,7 @@ module.exports = function getGracefulClose(server) {
             console.log(`socket#${ids.indexOf(socket)}: request finished`);
             sockets.set(socket, false);
             if (!isServerListening) { // Node 5+: use "server.listening"
-                console.log(`socket#${ids.indexOf(socket)}: ...destroying because server isn't listening!`);
+                console.log(`socket#${ids.indexOf(socket)}: ...destroying because server is closing`);
                 socket.end();
                 socket.destroy(); // helps Varnish: http://bit.ly/1TQxTRQ
                 // let socket "close" event handler remove it from sockets
